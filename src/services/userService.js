@@ -53,7 +53,7 @@
 
 
 import axios from 'axios';
-import BACKEND_URL from '../../apiConfig.js';
+import BACKEND_URL from './bk.js';
 
 export const getUser = () =>
   localStorage.getItem('user')

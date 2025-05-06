@@ -1,0 +1,9 @@
+{
+    "rewrites": [
+      {
+        "source": "/api/:path*",
+        "destination": "https://delishapp-backend888.onrender.com/api/:path*"
+      }
+    ]
+  }
+  

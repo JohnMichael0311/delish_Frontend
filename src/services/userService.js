@@ -52,7 +52,7 @@
 // };
 
 
-import axiosInstance from './axiosInstance';
+import axios from 'axios';
 
 // Get current user
 export const getUser = () =>

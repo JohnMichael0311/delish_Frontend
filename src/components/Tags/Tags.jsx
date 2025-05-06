@@ -10,12 +10,13 @@ export default function Tags({ tags, forFoodPage }) {
         justifyContent: forFoodPage ? 'start' : 'center',
       }}
     >
-      {tags.map(tag => (
-        <Link key={tag.name} to={`/tag/${tag.name}`}>
-          {tag.name}
-          {!forFoodPage && `(${tag.count})`}
-        </Link>
-      ))}
+      {Array.isArray(tags) &&
+        tags.map(tag => (
+          <Link key={tag.name} to={`/tag/${tag.name}`}>
+            {tag.name}
+            {!forFoodPage && `(${tag.count})`}
+          </Link>
+        ))}
     </div>
   );
 }
